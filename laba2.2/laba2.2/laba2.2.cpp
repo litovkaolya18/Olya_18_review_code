@@ -33,6 +33,7 @@
 //FIX_ME: используем актуальные имена переменных и полей 
 //FIX_ME: имя функции должно быть в стиле Google (snake_case)
 //bool IsNumber(const string& str) {
+// Проверяет, является ли строка корректным целым числом.
 bool is_number(const std::string& str) {
     if (str.empty()) {
         return false;
