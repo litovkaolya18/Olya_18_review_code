@@ -11,9 +11,9 @@ public:
     Queue();  // Создаёт пустую очередь 
     ~Queue(); // Освобождает всю память
 
-    //void push(int num);
+    // void push(int num);
     // bool pop(int& num);
-    //void EvenHead();
+    // void EvenHead();
     void push(int value); // Добавляет новый элемент в конец очереди
     bool pop(int& value); // Удаляет элемент из начала очереди.
     void show() const;    // Выводит все элементы очереди на экран

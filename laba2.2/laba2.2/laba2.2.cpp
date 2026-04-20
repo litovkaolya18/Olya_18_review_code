@@ -27,7 +27,6 @@
 //FIX_ME: добавлена библиотека Windows API для установки кодировки консоли
 #include <windows.h>
 //FIX_ME: убран using namespace std; по Google Style
-//старый код
 // using namespace std;
 
 //FIX_ME: используем актуальные имена переменных и полей 
@@ -140,13 +139,19 @@ int main() {
     queue.get_p1_data();
     std::cout << std::endl;
 
-    std::cout << "Новый адрес начала очереди (P1): " << queue.get_p1() << std::endl;
+    //FIX_ME: длина привышает 80 символов 
+    //std::cout << "Новый адрес начала очереди (P1): " << queue.get_p1() << std::endl;
+    std::cout << "Новый адрес начала очереди (P1): " << queue.get_p1() 
+        << std::endl;
 
     std::cout << "Значение последнего элемента: ";
     queue.get_p2_data();
     std::cout << std::endl;
 
-    std::cout << "Новый адрес конца очереди (P2): " << queue.get_p2() << std::endl;
+    //FIX_ME: длина привышает 80 символов 
+    //std::cout << "Новый адрес конца очереди (P2): " << queue.get_p2() << std::endl;
+    std::cout << "Новый адрес конца очереди (P2): " << queue.get_p2() 
+        << std::endl;
 
     return 0;
 }
