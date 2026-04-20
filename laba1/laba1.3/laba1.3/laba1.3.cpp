@@ -52,7 +52,7 @@ int main()
         if (!(std::cin >> n)) {
             std::cout << "Ошибка: требуется число." << std::endl;
 
-            //FIX_ME: очистка мусора без max
+            //FIX_ME: очистка мусора
             std::cin.clear();
             std::string trash;
             std::getline(std::cin, trash);
